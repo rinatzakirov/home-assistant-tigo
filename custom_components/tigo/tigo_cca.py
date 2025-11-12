@@ -244,9 +244,9 @@ class _MmdstatusParser(_TableParser):
             case 6:
                 self._status.voltage_out = float(data)
             case 8:
-                self._status.current = float(data) * 2.0 * 1.0576
+                self._status.current = float(data) * 2.0 * 1.03
             case 9:
-                self._status.power = float(data) * 2.0 * 1.0576
+                self._status.power = float(data) * 2.0 * 1.03
             case 11:
                 self._status.temperature = float(data)
             case 12:
