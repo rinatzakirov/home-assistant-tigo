@@ -244,9 +244,9 @@ class _MmdstatusParser(_TableParser):
             case 6:
                 self._status.voltage_out = float(data)
             case 8:
-                self._status.current = float(data) * 2.0
+                self._status.current = float(data) * 2.0 * 1.0576
             case 9:
-                self._status.power = float(data) * 2.0
+                self._status.power = float(data) * 2.0 * 1.0576
             case 11:
                 self._status.temperature = float(data)
             case 12:
@@ -289,9 +289,9 @@ class _MeshdatapowereParser(_TableParser):
             case 14:
                 self._status.voltage_out = float(data)
             case 15:
-                self._status.current = float(data) * 2.0
+                self._status.current = float(data) * 2.0 * 1.0576
             case 16:
-                self._status.power = float(data) * 2.0
+                self._status.power = float(data) * 2.0 * 1.0576
             case 17:
                 self._status.pwm = int(data)
             case 18:
